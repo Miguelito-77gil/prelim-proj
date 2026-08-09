@@ -2,20 +2,16 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 function AboutSection() {
   return (
-    <section
-      id="about"
-      className="border-b border-gray-200 bg-white px-6 py-24 dark:border-gray-800 dark:bg-gray-950"
-    >
-      <div className="mx-auto max-w-6xl">
+    <section>
+      <div className="mx-auto max-w-6xl px-6 py-16">
         <SectionHeading
-          
           title="About me"
-          description="A little more about me, what I've learned, and what I enjoy doing."
+          description="A quick look at who I am, how I started, and what I enjoy doing."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {/* A Little About Me */}
-          <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-800 dark:bg-gray-900 md:col-span-2">
+          <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-gray-900">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               A Little About Me
             </h3>
@@ -28,7 +24,7 @@ function AboutSection() {
           </div>
 
           {/* My Journey */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-gray-900">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               My Journey
             </h3>
@@ -41,7 +37,7 @@ function AboutSection() {
           </div>
 
           {/* What I Enjoy */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-gray-900">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               What I Enjoy
             </h3>
