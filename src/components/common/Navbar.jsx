@@ -83,7 +83,7 @@ function Navbar() {
             className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800"
             aria-label="Toggle dark mode"
           >
-            {darkMode ? "☀️" : "🌙"}
+           {darkMode ? "☀" : "☾"}
           </button>
 
         </div>
