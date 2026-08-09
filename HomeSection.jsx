@@ -3,12 +3,13 @@ import heroImage from "@/assets/miguel.jpg";
 
 function HomeSection() {
   return (
-    <section className="py-12 sm:py-16">
-       <div className="mx-auto max-w-6xl px-6 sm:px-12 lg:px-6">  
-        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
+    <section className="-mt-2">
+      {/* Hero Content */}
+      <div className="mx-auto max-w-6xl px-5 sm:px-10 lg:px-6">
+          <div className="grid items-center gap-10 pt-0 pb-12 md:grid-cols-2 md:gap-12 md:pt-2 md:pb-16">
 
           {/* Hero Text */}
-          <div className="pt-2">
+            <div className="-mt-10 pt-2 md:-mt-16">
             <p className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
               Hello, I'm
             </p>
@@ -33,9 +34,9 @@ function HomeSection() {
               </Button>
 
               <Button
-                href="#contact"
-                className="bg-white text-black ring-1 ring-gray-300 hover:bg-gray-50 dark:bg-gray-900 dark:text-white dark:ring-gray-700 dark:hover:bg-gray-800"
-              >
+             href="/#contact"
+                className="bg-gray-100 text-gray-900 ring-1 ring-gray-300 hover:bg-gray-200 dark:bg-[#242526] dark:text-white dark:ring-[#3A3B3C] dark:hover:bg-[#2A2B2C]"
+                >
                 Contact Me
               </Button>
             </div>
@@ -53,10 +54,11 @@ function HomeSection() {
         </div>
       </div>
 
-      {/* Full Width Divider */}
-      <div className="mt-14 w-full border-t border-gray-200 dark:border-gray-800 sm:mt-16" />
+      {/* Full Width Divider Before About */}
+      <div className="mt-14 w-full border-t border-gray-200 dark:border-[#3A3B3C] sm:mt-16" />
     </section>
   );
 }
 
 export default HomeSection;
+
