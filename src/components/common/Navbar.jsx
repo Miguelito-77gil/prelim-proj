@@ -13,9 +13,8 @@ function Navbar() {
   }, [darkMode]);
 
   return (
-    <header className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+    <header>
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
         {/* Logo */}
         <Link
           to="/"
@@ -35,7 +34,6 @@ function Navbar() {
 
         {/* Navigation */}
         <div className="flex items-center gap-3 sm:gap-6">
-
           {/* Home */}
           <Link
             to="/"
@@ -80,12 +78,11 @@ function Navbar() {
           <button
             type="button"
             onClick={() => setDarkMode((current) => !current)}
-            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800"
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
             aria-label="Toggle dark mode"
           >
-           {darkMode ? "☀" : "☾"}
+            {darkMode ? "☀" : "☾"}
           </button>
-
         </div>
       </nav>
     </header>
