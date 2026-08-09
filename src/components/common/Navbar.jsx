@@ -13,7 +13,7 @@ function Navbar() {
   }, [darkMode]);
 
   return (
-    <header>
+    <header className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link
@@ -90,3 +90,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
