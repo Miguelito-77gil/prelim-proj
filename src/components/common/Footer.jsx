@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+    <footer className="border-t border-gray-200 bg-white dark:border-[#3A3B3C] dark:bg-[#18191A]">
       <div className="mx-auto flex max-w-6xl justify-center px-4 py-5 text-center text-xs text-gray-500 sm:px-6 sm:py-6 sm:text-sm dark:text-gray-400">
         © 2026 Miguel. All rights reserved.
       </div>
@@ -9,3 +9,4 @@ function Footer() {
 }
 
 export default Footer;
+

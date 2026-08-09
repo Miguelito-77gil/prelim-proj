@@ -23,8 +23,8 @@ function Navbar() {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
-      <nav className="mx-auto max-w-6xl px-6 py-4">
+    <header className="border-b border-gray-200 bg-white dark:border-[#3A3B3C] dark:bg-[#18191A]">
+      <nav className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
 
         {/* Navbar Top */}
         <div className="flex items-center justify-between">
@@ -85,10 +85,11 @@ function Navbar() {
               Contact
             </Link>
 
+            {/* Dark Mode Icon */}
             <button
               type="button"
               onClick={toggleDarkMode}
-              className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+              className="text-lg text-gray-700 transition hover:opacity-60 dark:text-gray-300"
               aria-label="Toggle dark mode"
             >
               {darkMode ? "☀" : "☾"}
@@ -96,13 +97,13 @@ function Navbar() {
           </div>
 
           {/* Mobile Controls */}
-          <div className="flex items-center gap-2 md:hidden">
+          <div className="flex items-center gap-3 md:hidden">
 
-            {/* Dark Mode */}
+            {/* Dark Mode Icon */}
             <button
               type="button"
               onClick={toggleDarkMode}
-              className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+              className="text-lg text-gray-700 transition hover:opacity-60 dark:text-gray-300"
               aria-label="Toggle dark mode"
             >
               {darkMode ? "☀" : "☾"}
@@ -112,7 +113,7 @@ function Navbar() {
             <button
               type="button"
               onClick={() => setMenuOpen((current) => !current)}
-              className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-lg text-gray-900 transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+              className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-lg text-gray-900 transition hover:bg-gray-100 dark:border-[#3A3B3C] dark:bg-[#242526] dark:text-white dark:hover:bg-[#3A3B3C]"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
             >
@@ -123,13 +124,13 @@ function Navbar() {
 
         {/* Mobile Navigation */}
         {menuOpen && (
-          <div className="mt-4 border-t border-gray-200 pt-4 dark:border-gray-800 md:hidden">
+          <div className="mt-4 border-t border-gray-200 pt-4 dark:border-[#3A3B3C] md:hidden">
             <div className="flex flex-col gap-1">
 
               <Link
                 to="/"
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-[#242526]"
               >
                 Home
               </Link>
@@ -137,7 +138,7 @@ function Navbar() {
               <a
                 href="/#about"
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-[#242526]"
               >
                 About
               </a>
@@ -145,7 +146,7 @@ function Navbar() {
               <Link
                 to="/projects"
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-[#242526]"
               >
                 Projects
               </Link>
@@ -153,7 +154,7 @@ function Navbar() {
               <Link
                 to="/gallery"
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-[#242526]"
               >
                 Gallery
               </Link>
@@ -161,7 +162,7 @@ function Navbar() {
               <Link
                 to="/contact"
                 onClick={closeMenu}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-[#242526]"
               >
                 Contact
               </Link>
@@ -175,3 +176,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
