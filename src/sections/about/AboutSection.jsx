@@ -10,7 +10,7 @@ function AboutSection() {
         <SectionHeading
           eyebrow="About Me"
           title="A little about myself"
-          description="A quick look at who I am, my journey, and what I enjoy doing."
+          description="A little more about me, what I've learned, and what I enjoy doing."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -21,10 +21,9 @@ function AboutSection() {
             </h3>
 
             <p className="mt-4 max-w-3xl leading-7 text-gray-600 dark:text-gray-300">
-              I'm Miguel, a student and aspiring web developer who enjoys
-              creating modern and responsive websites. I'm continuously
-              improving my skills by building projects and exploring new
-              technologies.
+              I'm Miguel, a student who is learning web development and
+              enjoying the process of building my own websites. I use my
+              projects to practice what I learn and get better with each one.
             </p>
           </div>
 
@@ -35,10 +34,9 @@ function AboutSection() {
             </h3>
 
             <p className="mt-4 leading-7 text-gray-600 dark:text-gray-300">
-              I started my web development journey by learning the
-              fundamentals of HTML, CSS, and JavaScript. As I continued
-              learning, I became interested in React and modern frontend
-              development.
+              I started by learning the basics of HTML, CSS, and JavaScript.
+              After getting more comfortable with them, I started learning
+              React and using it to build more projects.
             </p>
           </div>
 
@@ -49,9 +47,9 @@ function AboutSection() {
             </h3>
 
             <p className="mt-4 leading-7 text-gray-600 dark:text-gray-300">
-              I enjoy designing clean interfaces, building responsive
-              websites, learning new technologies, and turning ideas
-              into working projects.
+              I enjoy working on website layouts, trying different designs,
+              and figuring out how to make things work. I also like learning
+              something new whenever I work on a project.
             </p>
           </div>
         </div>
