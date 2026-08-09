@@ -8,8 +8,8 @@ function AboutSection() {
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          eyebrow="About Me"
-          title="A little about myself"
+          
+          title="About me"
           description="A little more about me, what I've learned, and what I enjoy doing."
         />
 
