@@ -17,20 +17,17 @@ function ContactSection() {
   };
 
   return (
-    <section
-      id="contact"
-      className="border-b border-gray-200 bg-white px-6 py-24 dark:border-gray-800 dark:bg-gray-950"
-    >
-      <div className="mx-auto max-w-6xl">
+    <section id="contact">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8 md:px-14 lg:px-6">
         <SectionHeading
-          eyebrow="Contact"
-          title="Let's connect"
-          description="Have a question, project idea, or just want to say hello? Feel free to reach out."
+          title="Contact"
+          description="Have a question, idea, or opportunity? Feel free to get in touch."
         />
 
         <div className="mt-8 grid gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
+
           {/* Contact Information */}
-          <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 dark:border-gray-800 dark:bg-gray-900 sm:p-8">
+          <div className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm transition duration-300 hover:shadow-md dark:border-[#3A3B3C] dark:bg-[#242526] sm:p-8">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">
               Get in Touch
             </h3>
@@ -73,7 +70,7 @@ function ContactSection() {
             </div>
 
             {/* Social Links */}
-            <div className="mt-7 border-t border-gray-200 pt-6 dark:border-gray-800 sm:mt-8">
+            <div className="mt-7 border-t border-gray-200 pt-6 dark:border-[#3A3B3C] sm:mt-8">
               <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Connect with me
               </p>
@@ -83,7 +80,7 @@ function ContactSection() {
                   href="https://github.com/Miguelito-77gil"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-200 dark:hover:bg-gray-800"
+                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-gray-200 dark:hover:bg-[#3A3B3C]"
                 >
                   <span>◉</span>
                   GitHub
@@ -93,7 +90,7 @@ function ContactSection() {
                   href="https://www.facebook.com/antonioraze777"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-200 dark:hover:bg-gray-800"
+                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-gray-200 dark:hover:bg-[#3A3B3C]"
                 >
                   <span>f</span>
                   Facebook
@@ -103,7 +100,7 @@ function ContactSection() {
                   href="https://www.instagram.com/migl.cr14/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-200 dark:hover:bg-gray-800"
+                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-gray-200 dark:hover:bg-[#3A3B3C]"
                 >
                   <span>◎</span>
                   Instagram
@@ -113,15 +110,14 @@ function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-800 dark:bg-gray-900 sm:p-8">
+          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition duration-300 hover:shadow-md dark:border-[#3A3B3C] dark:bg-[#242526] sm:p-8">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">
               Send a Message
             </h3>
 
-            <form
-              onSubmit={handleSubmit}
-              className="mt-6 space-y-5"
-            >
+            <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+
+              {/* Name */}
               <div>
                 <label
                   htmlFor="name"
@@ -136,10 +132,11 @@ function ContactSection() {
                   type="text"
                   required
                   placeholder="Your name"
-                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
+                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
                 />
               </div>
 
+              {/* Email */}
               <div>
                 <label
                   htmlFor="email"
@@ -154,10 +151,11 @@ function ContactSection() {
                   type="email"
                   required
                   placeholder="you@example.com"
-                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
+                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
                 />
               </div>
 
+              {/* Message */}
               <div>
                 <label
                   htmlFor="message"
@@ -172,7 +170,7 @@ function ContactSection() {
                   rows="5"
                   required
                   placeholder="Write your message..."
-                  className="mt-2 w-full resize-y rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
+                  className="mt-2 w-full resize-y rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black sm:text-base dark:border-[#3A3B3C] dark:bg-[#18191A] dark:text-white dark:placeholder:text-gray-500 dark:focus:border-white dark:focus:ring-white"
                 />
               </div>
 
@@ -181,12 +179,13 @@ function ContactSection() {
               </Button>
 
               {messageSent && (
-                <p className="rounded-lg bg-green-50 px-4 py-3 text-center text-sm font-medium text-green-700 dark:bg-green-950 dark:text-green-300">
+                <p className="rounded-lg bg-green-50 px-4 py-3 text-center text-sm font-medium text-green-700 dark:bg-[#263A2A] dark:text-green-300">
                   Message sent successfully!
                 </p>
               )}
             </form>
           </div>
+
         </div>
       </div>
     </section>
