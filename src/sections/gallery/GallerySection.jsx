@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import pic1 from "@/assets/gallery/pic1.jpg";
 import pic2 from "@/assets/gallery/pic2.jpg";
 import pic3 from "@/assets/gallery/pic3.jpg";
@@ -12,10 +11,13 @@ function GallerySection() {
   const [showPremium, setShowPremium] = useState(false);
 
   return (
-    <section className="border-b border-gray-200 bg-white px-6 py-16 dark:border-gray-800 dark:bg-gray-950 sm:py-24">
+    <section
+      id="gallery"
+      className="border-b border-gray-200 bg-white px-6 py-20 dark:border-gray-800 dark:bg-gray-950 sm:py-24"
+    >
       <div className="mx-auto max-w-6xl">
         {/* Gallery Heading */}
-        <h2 className="mt-2 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
           My Gallery
         </h2>
 
@@ -47,10 +49,10 @@ function GallerySection() {
             <img
               src={pic2}
               alt="Premium gallery photo 2"
-              className="h-56 w-full object-cover blur-md transition duration-300 group-hover:scale-105 sm:h-64"
+              className="h-56 w-full object-cover blur-2xl transition duration-300 sm:h-64"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 px-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-4">
               <div className="text-center text-white">
                 <div className="text-2xl sm:text-3xl">🔒</div>
 
@@ -74,10 +76,10 @@ function GallerySection() {
             <img
               src={pic3}
               alt="Premium gallery photo 3"
-              className="h-56 w-full object-cover blur-md transition duration-300 group-hover:scale-105 sm:h-64"
+              className="h-56 w-full object-cover blur-2xl transition duration-300 sm:h-64"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 px-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-4">
               <div className="text-center text-white">
                 <div className="text-2xl sm:text-3xl">🔒</div>
 
@@ -101,10 +103,10 @@ function GallerySection() {
             <img
               src={pic4}
               alt="Premium gallery photo 4"
-              className="h-56 w-full object-cover blur-md transition duration-300 group-hover:scale-105 sm:h-64"
+              className="h-56 w-full object-cover blur-2xl transition duration-300 sm:h-64"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 px-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-4">
               <div className="text-center text-white">
                 <div className="text-2xl sm:text-3xl">🔒</div>
 
@@ -128,10 +130,10 @@ function GallerySection() {
             <img
               src={pic5}
               alt="Premium gallery photo 5"
-              className="h-56 w-full object-cover blur-md transition duration-300 group-hover:scale-105 sm:h-64"
+              className="h-56 w-full object-cover blur-2xl transition duration-300 sm:h-64"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 px-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-4">
               <div className="text-center text-white">
                 <div className="text-2xl sm:text-3xl">🔒</div>
 
@@ -155,10 +157,10 @@ function GallerySection() {
             <img
               src={pic6}
               alt="Premium gallery photo 6"
-              className="h-56 w-full object-cover blur-md transition duration-300 group-hover:scale-105 sm:h-64"
+              className="h-56 w-full object-cover blur-2xl transition duration-300 sm:h-64"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 px-4">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-4">
               <div className="text-center text-white">
                 <div className="text-2xl sm:text-3xl">🔒</div>
 
@@ -216,8 +218,8 @@ function GallerySection() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300 sm:text-base sm:leading-7">
-              This photo is available for premium members. Subscribe to unlock
-              this content.
+              This photo is available for premium members. Subscribe to
+              unlock this content.
             </p>
 
             <button
@@ -243,4 +245,3 @@ function GallerySection() {
 }
 
 export default GallerySection;
-
