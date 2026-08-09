@@ -4,7 +4,7 @@ import heroImage from "@/assets/miguel.jpg";
 function HomeSection() {
   return (
     <section className="py-12 sm:py-16">
-      <div className="mx-auto max-w-6xl px-5 sm:px-10 lg:px-6">
+       <div className="mx-auto max-w-6xl px-6 sm:px-12 lg:px-6">  
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
 
           {/* Hero Text */}
