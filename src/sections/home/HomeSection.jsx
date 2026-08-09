@@ -5,7 +5,7 @@ function HomeSection() {
   return (
     <section>
       {/* Hero Content */}
-      <div className="mx-auto max-w-6xl px-2 sm:px-0">
+       <div className="mx-auto max-w-6xl px-6 sm:px-10 md:px-14 lg:px-6">
         <div className="grid items-start gap-10 md:grid-cols-2 md:gap-16">
 
           {/* Hero Text */}
