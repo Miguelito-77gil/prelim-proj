@@ -9,12 +9,11 @@ function ProjectsSection() {
   const comingSoonProjects = [1, 2, 3, 4, 5];
 
   return (
-    <section className="border-b border-gray-200 bg-white px-6 py-16 dark:border-gray-800 dark:bg-gray-950 sm:py-24">
-      <div className="mx-auto max-w-6xl">
+    <section className="py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8 md:px-14 lg:px-6">
         <SectionHeading
-          eyebrow="Projects"
-          title="Things I've worked on"
-          description="Some of the projects I've made while learning and practicing web development."
+          title="Projects"
+          description="A collection of projects I've built while learning and improving my web development skills."
         />
 
         {/* Projects Grid */}
@@ -23,9 +22,9 @@ function ProjectsSection() {
           {/* Featured Project */}
           <Link
             to="/"
-            className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
+            className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-[#3A3B3C] dark:bg-[#242526] dark:hover:bg-[#2A2B2C]"
           >
-            <div className="h-44 overflow-hidden bg-gray-100 dark:bg-gray-800 sm:h-48">
+            <div className="h-44 overflow-hidden bg-gray-100 dark:bg-[#18191A] sm:h-48">
               <img
                 src={logoImage}
                 alt="Personal Portfolio Website"
@@ -51,7 +50,7 @@ function ProjectsSection() {
                 {["React", "Vite", "Tailwind CSS"].map((technology) => (
                   <span
                     key={technology}
-                    className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                    className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-700 dark:bg-[#3A3B3C] dark:text-gray-200"
                   >
                     {technology}
                   </span>
@@ -66,9 +65,9 @@ function ProjectsSection() {
               key={project}
               type="button"
               onClick={() => setShowComingSoon(true)}
-              className="group w-full overflow-hidden rounded-2xl border border-gray-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
+              className="group w-full overflow-hidden rounded-2xl border border-gray-200 bg-white text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-[#3A3B3C] dark:bg-[#242526] dark:hover:bg-[#2A2B2C]"
             >
-              <div className="relative h-44 overflow-hidden bg-gray-200 dark:bg-gray-800 sm:h-48">
+              <div className="relative h-44 overflow-hidden bg-gray-200 dark:bg-[#18191A] sm:h-48">
                 <div className="flex h-full items-center justify-center text-4xl blur-sm sm:text-5xl">
                   Project
                 </div>
@@ -106,7 +105,7 @@ function ProjectsSection() {
       </div>
 
       {/* Divider */}
-      <div className="mt-14 w-full border-t border-gray-200 dark:border-gray-800 sm:mt-16" />
+      <div className="mx-auto mt-14 w-full max-w-6xl border-t border-gray-200 px-6 dark:border-[#3A3B3C] sm:mt-16 sm:px-8 md:px-14 lg:px-6" />
 
       {/* Coming Soon Popup */}
       {showComingSoon && (
@@ -115,7 +114,7 @@ function ProjectsSection() {
           onClick={() => setShowComingSoon(false)}
         >
           <div
-            className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow-xl sm:p-8 dark:bg-gray-900"
+            className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow-xl sm:p-8 dark:bg-[#242526]"
             onClick={(event) => event.stopPropagation()}
           >
             <h2 className="text-xl font-bold text-gray-900 dark:text-white sm:text-2xl">
@@ -142,3 +141,4 @@ function ProjectsSection() {
 }
 
 export default ProjectsSection;
+
