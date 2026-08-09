@@ -18,9 +18,15 @@ function Navbar() {
     setMenuOpen(false);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode((current) => !current);
+  };
+
   return (
     <header className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
       <nav className="mx-auto max-w-6xl px-6 py-4">
+
+        {/* Navbar Top */}
         <div className="flex items-center justify-between">
 
           {/* Logo */}
@@ -43,7 +49,7 @@ function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-6 md:flex">
-            {/* Home */}
+
             <Link
               to="/"
               className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
@@ -51,7 +57,6 @@ function Navbar() {
               Home
             </Link>
 
-            {/* About */}
             <a
               href="/#about"
               className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
@@ -59,7 +64,6 @@ function Navbar() {
               About
             </a>
 
-            {/* Projects */}
             <Link
               to="/projects"
               className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
@@ -67,7 +71,6 @@ function Navbar() {
               Projects
             </Link>
 
-            {/* Gallery */}
             <Link
               to="/gallery"
               className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
@@ -75,7 +78,6 @@ function Navbar() {
               Gallery
             </Link>
 
-            {/* Contact */}
             <Link
               to="/contact"
               className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
@@ -83,10 +85,9 @@ function Navbar() {
               Contact
             </Link>
 
-            {/* Dark Mode */}
             <button
               type="button"
-              onClick={() => setDarkMode((current) => !current)}
+              onClick={toggleDarkMode}
               className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
               aria-label="Toggle dark mode"
             >
@@ -100,7 +101,7 @@ function Navbar() {
             {/* Dark Mode */}
             <button
               type="button"
-              onClick={() => setDarkMode((current) => !current)}
+              onClick={toggleDarkMode}
               className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black transition hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
               aria-label="Toggle dark mode"
             >
@@ -174,4 +175,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
