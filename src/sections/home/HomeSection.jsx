@@ -3,8 +3,7 @@ import heroImage from "@/assets/miguel.jpg";
 
 function HomeSection() {
   return (
-    <section className="bg-white px-6 pt-10 dark:bg-gray-950 sm:pt-14">
-
+    <section>
       {/* Hero Content */}
       <div className="mx-auto max-w-6xl">
         <div className="grid items-start gap-12 md:grid-cols-2 md:gap-16">
@@ -20,12 +19,13 @@ function HomeSection() {
             </h1>
 
             <p className="mt-4 max-w-xl text-xl text-gray-600 dark:text-gray-300">
-             “I'm a student learning web development and building my skills one project at a time.”
+              I'm currently learning web development and improving my skills
+              through different projects.
             </p>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-600 dark:text-gray-300">
-              I enjoy building modern, responsive websites and learning new
-              technologies through real-world projects.
+              I like creating websites, trying new things, and learning more
+              as I work on each project.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -43,11 +43,11 @@ function HomeSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center pt-6 md:justify-end md:pt-4">
             <img
               src={heroImage}
               alt="Miguel Carillo"
-              className="w-full max-w-sm rounded-2xl object-cover shadow-lg"
+              className="w-full max-w-xs rounded-2xl object-cover shadow-lg"
             />
           </div>
 
@@ -56,7 +56,6 @@ function HomeSection() {
 
       {/* Full Width Divider Before About */}
       <div className="mt-16 w-full border-t border-gray-200 dark:border-gray-800" />
-
     </section>
   );
 }
