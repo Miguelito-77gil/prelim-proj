@@ -9,14 +9,17 @@ function ProjectsSection() {
   const comingSoonProjects = [1, 2, 3, 4, 5];
 
   return (
-    <section className="py-20">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="border-b border-gray-200 bg-white px-6 py-24 dark:border-gray-800 dark:bg-gray-950">
+      <div className="mx-auto max-w-6xl">
+
         <SectionHeading
-          title="My Projects"
-          description="A collection of projects I have created and projects currently in development."
+          eyebrow="Projects"
+          title="Things I've worked on"
+          description="Some of the projects I've made while learning and practicing web development."
         />
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
           {/* Featured Project */}
           <Link
             to="/"
@@ -40,8 +43,8 @@ function ProjectsSection() {
               </h2>
 
               <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
-                A responsive personal portfolio website built while learning
-                modern web development.
+                This is the portfolio website I built while learning React,
+                Vite, and Tailwind CSS.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2">
@@ -72,7 +75,9 @@ function ProjectsSection() {
 
                 <div className="absolute inset-0 flex items-center justify-center bg-black/40">
                   <div className="text-center text-white">
-                    <p className="font-semibold">Coming Soon</p>
+                    <p className="font-semibold">
+                      Coming Soon
+                    </p>
 
                     <p className="mt-1 text-xs text-gray-200">
                       Click to view
@@ -91,13 +96,17 @@ function ProjectsSection() {
                 </h2>
 
                 <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
-                  A new project will be added here in the future.
+                  I have more project ideas that I want to work on as I
+                  continue learning.
                 </p>
               </div>
             </button>
           ))}
         </div>
       </div>
+
+      {/* Divider */}
+      <div className="mt-16 w-full border-t border-gray-200 dark:border-gray-800" />
 
       {/* Coming Soon Popup */}
       {showComingSoon && (
@@ -110,12 +119,12 @@ function ProjectsSection() {
             onClick={(event) => event.stopPropagation()}
           >
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Project Coming Soon
+              More Projects Soon
             </h2>
 
             <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
-              I'm currently learning and building more projects. This section
-              will be updated as new projects are completed.
+              I'm still learning and working on new projects. I'll add them
+              here once they're ready.
             </p>
 
             <button
@@ -133,3 +142,4 @@ function ProjectsSection() {
 }
 
 export default ProjectsSection;
+
