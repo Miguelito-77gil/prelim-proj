@@ -14,7 +14,7 @@ function AboutSection() {
 
           {/* A Little About Me */}
           <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-[#3A3B3C] dark:bg-[#242526] dark:hover:bg-[#2A2B2C]">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-xl font-semibold text-gray-950 dark:text-white">
               A Little About Me
             </h3>
 
