@@ -18,3 +18,8 @@ body {
   background: white;
   color: #111827;
 }
+
+.dark body {
+  background: #18191a;
+  color: white;
+}
