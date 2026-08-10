@@ -10,20 +10,20 @@ function HomeSection() {
 
           {/* Hero Text */}
             <div className="-mt-10 pt-2 md:-mt-16">
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <p className="text-sm font-semibold uppercase tracking-wider text-gray-950 dark:text-gray-400">
               Hello, I'm
             </p>
 
-            <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+            <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-950 dark:text-white sm:text-5xl md:text-6xl">
               Miguel Carillo
             </h1>
 
-            <p className="mt-4 max-w-xl text-lg leading-7 text-gray-600 dark:text-gray-300 sm:text-xl">
+            <p className="mt-4 max-w-xl text-lg leading-7 text-gray-950 dark:text-gray-300 sm:text-xl">
               I'm currently learning web development and improving my skills
               through different projects.
             </p>
 
-            <p className="mt-4 max-w-xl text-sm leading-6 text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-base sm:leading-7">
+            <p className="mt-4 max-w-xl text-sm leading-6 text-gray-950 dark:text-gray-300 sm:mt-5 sm:text-base sm:leading-7">
               I like creating websites, trying new things, and learning more
               as I work on each project.
             </p>
@@ -34,12 +34,12 @@ function HomeSection() {
               </Button>
 
               <Button
-             href="/#contact"
-                className="bg-gray-100 text-gray-900 ring-1 ring-gray-300 hover:bg-gray-200 dark:bg-[#242526] dark:text-white dark:ring-[#3A3B3C] dark:hover:bg-[#2A2B2C]"
-                >
-                Contact Me
-              </Button>
-            </div>
+                      href="/#contact"
+                        className="bg-transparent text-gray-950 font-semibold ring-1 ring-gray-900/15 backdrop-blur-sm transition hover:bg-white/20 dark:text-white dark:ring-white/20 dark:hover:bg-white/10"
+                   >
+                   Contact Me
+                      </Button>
+                        </div>
           </div>
 
           {/* Hero Image */}
