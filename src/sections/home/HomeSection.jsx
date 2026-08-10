@@ -9,8 +9,8 @@ function HomeSection() {
           <div className="grid items-center gap-10 pt-0 pb-12 md:grid-cols-2 md:gap-12 md:pt-2 md:pb-16">
 
           {/* Hero Text */}
-            <div className="-mt-10 pt-2 md:-mt-16">
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-950 dark:text-gray-400">
+            <div className="mt-10 pt-2 md:mt-16">
+            <p className="text-sm font-semibold uppercase tracking-wider text-gray-950 dark:text-gray-300">
               Hello, I'm
             </p>
 
@@ -35,7 +35,8 @@ function HomeSection() {
 
               <Button
                       href="/#contact"
-                        className="bg-transparent text-gray-950 font-semibold ring-1 ring-gray-900/15 backdrop-blur-sm transition hover:bg-white/20 dark:text-white dark:ring-white/20 dark:hover:bg-white/10"
+                        className="bg-transparent text-gray-950 font-semibold ring-1 ring-gray-900/15 backdrop-blur-sm 
+                        transition hover:bg-white/20 dark:text-white dark:ring-white/20 dark:hover:bg-white/10"
                    >
                    Contact Me
                       </Button>
@@ -45,10 +46,10 @@ function HomeSection() {
           {/* Hero Image */}
           <div className="flex justify-center pt-2 md:justify-end md:pt-4">
             <img
-              src={heroImage}
-              alt="Miguel Carillo"
-              className="w-full max-w-[260px] rounded-2xl object-cover shadow-lg sm:max-w-xs"
-            />
+                 src={heroImage}
+                alt="Miguel Carillo"
+                  className="w-full max-w-[190px] rounded-2xl object-cover shadow-md sm:max-w-[220px]"
+                    />
           </div>
 
         </div>
