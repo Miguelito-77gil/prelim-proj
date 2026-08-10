@@ -23,9 +23,8 @@ function Navbar() {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white dark:border-[#3A3B3C] dark:bg-[#18191A]">
-      <nav className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
-
+        <header className="border-b border-gray-200 bg-transparent dark:border-[#3A3B3C]">
+         <nav className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
         {/* Navbar Top */}
         <div className="flex items-center justify-between">
 
@@ -52,35 +51,35 @@ function Navbar() {
 
             <Link
               to="/"
-              className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-medium text-gray-950 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               Home
             </Link>
 
             <a
               href="/#about"
-              className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-medium text-gray-950 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               About
             </a>
 
             <Link
               to="/projects"
-              className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-medium text-gray-950 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               Projects
             </Link>
 
             <Link
               to="/gallery"
-              className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-medium text-gray-950 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               Gallery
             </Link>
 
             <Link
               to="/contact"
-              className="text-sm font-medium text-gray-600 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
+              className="text-sm font-medium text-gray-950 transition hover:text-black dark:text-gray-300 dark:hover:text-white"
             >
               Contact
             </Link>
@@ -89,7 +88,7 @@ function Navbar() {
             <button
               type="button"
               onClick={toggleDarkMode}
-              className="text-lg text-gray-700 transition hover:opacity-60 dark:text-gray-300"
+              className="text-lg font-bold text-gray-950 transition-transform hover:scale-110 dark:text-white"
               aria-label="Toggle dark mode"
             >
               {darkMode ? "☀" : "☾"}
@@ -101,13 +100,13 @@ function Navbar() {
 
             {/* Dark Mode Icon */}
             <button
-              type="button"
-              onClick={toggleDarkMode}
-              className="text-lg text-gray-700 transition hover:opacity-60 dark:text-gray-300"
-              aria-label="Toggle dark mode"
-            >
-              {darkMode ? "☀" : "☾"}
-            </button>
+               type="button"
+                  onClick={toggleDarkMode}
+                    className="relative z-50 text-xl font-bold text-black transition-transform hover:scale-110 dark:text-white"
+                  aria-label="Toggle dark mode"
+                    >
+                    {darkMode ? "☀" : "☾"}
+                </button>
 
             {/* Hamburger */}
             <button
