@@ -10,7 +10,7 @@ function SectionHeading({ eyebrow, title, description }) {
       </h2>
 
       {description && (
-        <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300 sm:text-lg">
+        <p className="mt-4 text-base leading-7 text-gray-950 dark:text-gray-300 sm:text-lg">
           {description}
         </p>
       )}
