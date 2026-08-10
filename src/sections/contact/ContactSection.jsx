@@ -32,14 +32,14 @@ function ContactSection() {
               Get in Touch
             </h3>
 
-            <p className="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300 sm:text-base sm:leading-7">
+            <p className="mt-4 text-sm leading-6 text-gray-950 dark:text-gray-300 sm:text-base sm:leading-7">
               I'm open to learning opportunities, student projects, and
               conversations about web development.
             </p>
 
             <div className="mt-7 space-y-5 sm:mt-8">
               <div>
-                <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-medium text-gray-950 dark:text-gray-400">
                   Email
                 </p>
 
@@ -49,7 +49,7 @@ function ContactSection() {
               </div>
 
               <div>
-                <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-medium text-gray-950 dark:text-gray-400">
                   Location
                 </p>
 
@@ -59,7 +59,7 @@ function ContactSection() {
               </div>
 
               <div>
-                <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-medium text-gray-950 dark:text-gray-400">
                   Availability
                 </p>
 
@@ -71,7 +71,7 @@ function ContactSection() {
 
             {/* Social Links */}
             <div className="mt-7 border-t border-gray-200 pt-6 dark:border-[#3A3B3C] sm:mt-8">
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              <p className="text-sm font-medium text-gray-950 dark:text-gray-400">
                 Connect with me
               </p>
 
