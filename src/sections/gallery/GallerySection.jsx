@@ -72,15 +72,27 @@ function GallerySection() {
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 px-4">
                   <div className="text-center text-white">
 
-                    <div className="text-2xl sm:text-3xl">
-                      🔒
+                    <div className="mx-auto mb-2 flex items-center justify-center">
+                      <svg
+                        className="h-6 w-6 text-black dark:text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                        />
+                      </svg>
                     </div>
 
                     <p className="mt-2 text-sm font-semibold sm:text-base">
                       Premium Content
                     </p>
 
-                    <p className="mt-1 text-xs text-gray-200 sm:text-sm">
+                    <p className="mt-1 text-xs text-gray-300 sm:text-sm">
                       Click to unlock
                     </p>
 
@@ -126,8 +138,20 @@ function GallerySection() {
             className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-xl sm:p-8 dark:border-[#3A3B3C] dark:bg-[#242526]"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="text-4xl sm:text-5xl">
-              🔒
+            <div className="mx-auto flex items-center justify-center">
+              <svg
+                className="h-10 w-10 text-black dark:text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
             </div>
 
             <h3 className="mt-4 text-xl font-bold text-gray-900 dark:text-white sm:text-2xl">
@@ -162,4 +186,3 @@ function GallerySection() {
 }
 
 export default GallerySection;
-
